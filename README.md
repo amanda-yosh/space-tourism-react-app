@@ -46,7 +46,7 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [] create hover behaviour on header for desktop devices;
 - [] add the fonts;
 - [x] favicon and title;
-- [] fix imports to use '@' as src root folder;
+- [x] fix imports to use '@' as src root folder;
 - [] improve Text component;
 - [] use router object;
 - [x] lint improvements;
