@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import spaceLogo from '../assets/shared/logo.svg'
-import closeIcon from '../assets/shared/icon-close.svg'
-import menuIcon from '../assets/shared/icon-hamburger.svg'
+import spaceLogo from '../../assets/shared/logo.svg'
+import closeIcon from '../../assets/shared/icon-close.svg'
+import menuIcon from '../../assets/shared/icon-hamburger.svg'
 
 import {
     SpaceHeaderBar,

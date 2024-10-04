@@ -38,7 +38,9 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 ### Development - to do list to make this project possible within time
 
 - [x] create header component (working on all devices);
-- [] create home page (working on all devices);
+- [x] create home page (working on all devices);
 - [] create hover behaviour on header for desktop devices;
 - [] add the fonts;
 - [x] favicon and title;
+- [] fix imports to use '@' as src root folder;
+- [] improve Text component;
