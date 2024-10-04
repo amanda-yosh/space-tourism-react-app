@@ -11,7 +11,7 @@ import {
     SpaceHeaderMenuClose,
     SpaceHeaderLogoWrapper,
     SpaceHeaderMenuListLink,
-} from './SpaceHeader.styles'
+} from './styles'
 
 function SpaceHeader() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)

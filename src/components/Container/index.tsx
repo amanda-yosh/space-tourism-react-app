@@ -1,4 +1,4 @@
-import { ContainerWrapper } from "./Container.styles"
+import { ContainerWrapper } from "./styles"
 
 interface ContainerProps {
     children: React.ReactNode;
