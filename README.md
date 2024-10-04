@@ -25,6 +25,8 @@ Users should be able to:
 
 ## My process
 
+The tools were chosen for personal reasons, such as training the use of Styled Components, and given the speed with which I was able to complete the challenge, given the short amount of time.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -35,4 +37,8 @@ Users should be able to:
 
 ### Development - to do list to make this project possible within time
 
-- [] create header component working on mobile devices;
+- [x] create header component (working on all devices);
+- [] create home page (working on all devices);
+- [] create hover behaviour on header for desktop devices;
+- [] add the fonts;
+- [x] favicon and title;
