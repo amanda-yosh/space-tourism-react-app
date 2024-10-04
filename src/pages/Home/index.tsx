@@ -1,12 +1,12 @@
-import Container from "../../components/Container"
-import SpaceHeader from "../../components/SpaceHeader"
-import Text from "../../components/Text"
+import Container from '../../components/Container'
+import SpaceHeader from '../../components/SpaceHeader'
+import Text from '../../components/Text'
 
 import bgImgMobile from '../../assets/home/background-home-mobile.jpg'
 import bgImgTablet from '../../assets/home/background-home-tablet.jpg'
 import bgImgDesktop from '../../assets/home/background-home-desktop.jpg'
 
-import { Box, FlexDiv, ButtonCircle } from "./styles"
+import { Box, FlexDiv, ButtonCircle } from './styles'
 
 function Home() {
     return (

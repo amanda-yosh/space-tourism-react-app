@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 import { breakpoints } from '../../utils/breakpoints'
 
@@ -25,4 +25,4 @@ export const ContainerWrapper = styled.div<ContainerWrapperProps>`
     @media (min-width: ${desktop}) {
         background-image: ${props => `url(${props.backgroundUrl[2]})`};
     }
-`;
+`

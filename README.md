@@ -49,4 +49,4 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [] fix imports to use '@' as src root folder;
 - [] improve Text component;
 - [] use router object;
-- [] lint improvements;
+- [x] lint improvements;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 import { breakpoints } from '../../utils/breakpoints'
 
@@ -13,7 +13,7 @@ export const SpaceHeaderBar = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 24px;
-`;
+`
 
 export const SpaceHeaderLogoWrapper = styled.a`
     max-height: 40px;
@@ -21,7 +21,7 @@ export const SpaceHeaderLogoWrapper = styled.a`
     img {
         max-height: 40px;
     }
-`;
+`
 
 export const SpaceHeaderMenu = styled.nav<SpaceHeaderMenuProps>`
     position: fixed;
@@ -44,7 +44,7 @@ export const SpaceHeaderMenu = styled.nav<SpaceHeaderMenuProps>`
         flex-direction: row;
         transform: none;
     }
-`;
+`
 
 export const SpaceHeaderMenuClose = styled.div`
     display: flex;
@@ -53,7 +53,7 @@ export const SpaceHeaderMenuClose = styled.div`
     @media (min-width: ${tablet}) {
         display: none;
     }
-`;
+`
 
 export const SpaceHeaderMenuList = styled.ul`
     display: flex;
@@ -64,7 +64,7 @@ export const SpaceHeaderMenuList = styled.ul`
         flex-direction: row;
         align-items: center;
     }
-`;
+`
 
 export const SpaceHeaderMenuListLink = styled.a`
     text-transform: uppercase;
@@ -73,4 +73,4 @@ export const SpaceHeaderMenuListLink = styled.a`
         color: #d0d6f9;
         font-weight: 700;
     }
-`;
+`

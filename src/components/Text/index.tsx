@@ -24,7 +24,7 @@ function Text({
     size = 'regular',
     transform = 'none',
 }: TextProps) {
-    const CustomTag = tag as React.ElementType;
+    const CustomTag = tag as React.ElementType
 
     return (
         <CustomTag style={{
