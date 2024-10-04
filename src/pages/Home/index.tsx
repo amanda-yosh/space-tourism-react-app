@@ -6,7 +6,7 @@ import bgImgMobile from '../../assets/home/background-home-mobile.jpg'
 import bgImgTablet from '../../assets/home/background-home-tablet.jpg'
 import bgImgDesktop from '../../assets/home/background-home-desktop.jpg'
 
-import { Box, FlexDiv, ButtonCircle } from "./Home.styles"
+import { Box, FlexDiv, ButtonCircle } from "./styles"
 
 function Home() {
     return (

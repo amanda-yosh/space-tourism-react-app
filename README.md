@@ -39,8 +39,14 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 
 - [x] create header component (working on all devices);
 - [x] create home page (working on all devices);
+- [x] create crew page with dinamic layout;
+- [] create flex div component to wrapper main content;
+- [] create destination page with dinamic layout;
+- [] create tech page with dinamic layout;
 - [] create hover behaviour on header for desktop devices;
 - [] add the fonts;
 - [x] favicon and title;
 - [] fix imports to use '@' as src root folder;
 - [] improve Text component;
+- [] use router object;
+- [] lint improvements;
