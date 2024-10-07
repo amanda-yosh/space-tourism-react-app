@@ -31,6 +31,14 @@ export const DestinationNav = styled.nav`
     }
 `
 
+interface ListItemProps {
+    isActive: boolean;
+}
+
+export const ListItem = styled.li<ListItemProps>`
+    border-bottom: 2px solid ${props => props.isActive ? '#fff' : 'transparent'};
+`
+
 export const ImgWrapper = styled.div`
     max-width: 150px;
 

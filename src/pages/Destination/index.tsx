@@ -12,7 +12,7 @@ import bgImgDesktop from '@/assets/destination/background-destination-desktop.jp
 
 import { data } from '@/data'
 
-import { Box, ImgWrapper, DescriptionBox, DestinationNav } from './styles'
+import { Box, ListItem, ImgWrapper, DescriptionBox, DestinationNav } from './styles'
 
 function Destination() {
     const { destination = 'moon' } = useParams()
@@ -36,18 +36,18 @@ function Destination() {
                     <DescriptionBox>
                         <DestinationNav>
                             <ul>
-                                <li>
+                                <ListItem isActive={destination.toLowerCase() === 'moon'}>
                                     <Link to='/destination/moon'>Moon</Link>
-                                </li>
-                                <li>
+                                </ListItem>
+                                <ListItem isActive={destination.toLowerCase() === 'mars'}>
                                     <Link to='/destination/mars'>Mars</Link>
-                                </li>
-                                <li>
+                                </ListItem>
+                                <ListItem isActive={destination.toLowerCase() === 'europa'}>
                                     <Link to='/destination/europa'>Europa</Link>
-                                </li>
-                                <li>
+                                </ListItem>
+                                <ListItem isActive={destination.toLowerCase() === 'titan'}>
                                     <Link to='/destination/titan'>Titan</Link>
-                                </li>
+                                </ListItem>
                             </ul>
                         </DestinationNav>
 
