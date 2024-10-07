@@ -60,17 +60,17 @@ export const SpaceHeaderMenuList = styled.ul`
     flex-direction: column;
     gap: 32px;
 
-    @media (min-width: ${tablet}) {
-        flex-direction: row;
-        align-items: center;
+    a {
+        text-transform: uppercase;
     }
-`
-
-export const SpaceHeaderMenuListLink = styled.a`
-    text-transform: uppercase;
 
     span {
         color: #d0d6f9;
         font-weight: 700;
+    }
+
+    @media (min-width: ${tablet}) {
+        flex-direction: row;
+        align-items: center;
     }
 `

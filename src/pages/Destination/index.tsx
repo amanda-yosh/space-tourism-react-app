@@ -1,3 +1,5 @@
+import { useParams } from 'react-router-dom'
+
 import Container from '@/components/Container'
 import SpaceHeader from '@/components/SpaceHeader'
 import SubTitle from '@/components/SubTitle/styles'
@@ -12,7 +14,8 @@ import { data } from '@/data'
 import { Box, ImgWrapper, DescriptionBox } from './styles'
 
 function Destination() {
-    const id = 0
+    const { id } = useParams()
+    const { name, description, distance, travel, images } = data.destination[Number(id)]
 
     return (
         <Container backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
@@ -23,19 +26,19 @@ function Destination() {
 
                 <Box>
                     <ImgWrapper>
-                        <img src={data.destination[id].images.webp} alt="" />
+                        <img src={images.webp} alt="" />
                     </ImgWrapper>
 
                     <DescriptionBox>
-                        <Text size='big-plus' transform='uppercase'>{data.destination[id].name}</Text>
+                        <Text size='big-plus' transform='uppercase'>{name}</Text>
 
-                        <Text>{data.destination[id].description}</Text>
+                        <Text>{description}</Text>
 
                         <Text transform='uppercase'>Avg. distance</Text>
-                        <Text>{data.destination[id].distance}</Text>
+                        <Text>{distance}</Text>
 
                         <Text transform='uppercase'>Est. travel time</Text>
-                        <Text>{data.destination[id].travel}</Text>
+                        <Text>{travel}</Text>
                     </DescriptionBox>
                 </Box>
             </div>

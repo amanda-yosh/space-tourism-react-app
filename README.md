@@ -51,7 +51,7 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [] improve Text component;
 - [] use router object;
 - [x] lint improvements;
-- [] add internal links;
+- [x] add internal links;
 - [] add nav to tech page;
 - [] add nav to crew page;
 - [] add nav to destination page;

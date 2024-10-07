@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import spaceLogo from '@/assets/shared/logo.svg'
 import closeIcon from '@/assets/shared/icon-close.svg'
@@ -10,7 +11,6 @@ import {
     SpaceHeaderMenuList,
     SpaceHeaderMenuClose,
     SpaceHeaderLogoWrapper,
-    SpaceHeaderMenuListLink,
 } from './styles'
 
 function SpaceHeader() {
@@ -35,24 +35,16 @@ function SpaceHeader() {
 
                 <SpaceHeaderMenuList>
                     <li>
-                        <SpaceHeaderMenuListLink href="/">
-                            <span>00</span> Home
-                        </SpaceHeaderMenuListLink>
+                        <Link to='/'><span>00</span> Home</Link>
                     </li>
                     <li>
-                        <SpaceHeaderMenuListLink href="/destination">
-                            <span>01</span> Destination
-                        </SpaceHeaderMenuListLink>
+                        <Link to='/destination/0'><span>01</span> Destination</Link>
                     </li>
                     <li>
-                        <SpaceHeaderMenuListLink href="/crew">
-                            <span>02</span> Crew
-                        </SpaceHeaderMenuListLink>
+                        <Link to='/crew/0'><span>02</span> Crew</Link>
                     </li>
                     <li>
-                        <SpaceHeaderMenuListLink href="/technology">
-                            <span>03</span> Technology
-                        </SpaceHeaderMenuListLink>
+                        <Link to="/technology/0"><span>03</span> Technology</Link>
                     </li>
                 </SpaceHeaderMenuList>
             </SpaceHeaderMenu>
