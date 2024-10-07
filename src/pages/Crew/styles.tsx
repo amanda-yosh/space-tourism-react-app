@@ -15,13 +15,6 @@ export const FlexDiv = styled.div`
     }
 `
 
-export const TitleWrapper = styled.div`
-    @media (min-width: ${tablet}) {
-        width: 100%;
-        text-align: start;
-    }
-`
-
 export const Box = styled.div`
     display: flex;
     flex-direction: column;

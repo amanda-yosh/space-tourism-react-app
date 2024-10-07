@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 
 import SpaceHeader from '@/components/SpaceHeader'
 import Container from '@/components/Container'
+import SubTitle from '@/components/SubTitle/styles'
 import Text from '@/components/Text'
 
 import bgImgMobile from '@/assets/crew/background-crew-mobile.jpg'
@@ -10,7 +11,7 @@ import bgImgDesktop from '@/assets/crew/background-crew-desktop.jpg'
 
 import { data } from '@/data'
 
-import { Box, FlexDiv, ImgWrapper, TitleWrapper } from './styles'
+import { Box, FlexDiv, ImgWrapper } from './styles'
 
 function Crew() {
     const { id } = useParams()
@@ -22,9 +23,7 @@ function Crew() {
 
             <FlexDiv>
                 <Box>
-                    <TitleWrapper>
-                        <Text tag='h2' transform='uppercase'><span>02</span> Meet your crew</Text>
-                    </TitleWrapper>
+                    <SubTitle index='02' subtitle='Meet your crew' />
 
                     <div>
                         <Text size='big' tag='h1' transform='uppercase'>{data.crew[idNumber].role}</Text>
