@@ -28,6 +28,37 @@ export const Box = styled.div`
     }
 `
 
+interface CircleProps {
+    isActive: boolean;
+}
+
+export const Circle = styled.div<CircleProps>`
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:  ${props => props.isActive ? '#fff' : '#979797'};
+
+    @media (min-width: ${desktop}) {
+        width: 15px;
+        height: 15px;
+    }
+`
+
+export const CrewNav = styled.nav`
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    @media (min-width: ${desktop}) {
+       ul {
+            gap: 40px;
+       }
+    }
+`
+
 export const ImgWrapper = styled.div`
     max-height: 340px;
 
