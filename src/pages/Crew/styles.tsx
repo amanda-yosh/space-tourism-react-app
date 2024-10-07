@@ -23,10 +23,6 @@ export const Box = styled.div`
     text-align: center;
     margin-bottom: 64px;
 
-    div {
-        margin-top: 64px;
-    }
-
     @media (min-width: ${desktop}) {
         max-width: 540px;
     }

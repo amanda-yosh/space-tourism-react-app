@@ -40,7 +40,7 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [x] create header component (working on all devices);
 - [x] create home page (working on all devices);
 - [x] create crew page with dinamic layout;
-- [] create flex div component to wrapper main content;
+- [x] create container component to wrapper main content;
 - [x] create destination page with dinamic layout;
 - [x] create tech page with dinamic layout;
 - [] create hover behaviour on header for desktop devices;

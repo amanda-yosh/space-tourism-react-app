@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
 
+import BackgroundImage from '@/components/BackgroundImage'
 import Container from '@/components/Container'
 import SpaceHeader from '@/components/SpaceHeader'
-import SubTitle from '@/components/SubTitle/styles'
+import SubTitle from '@/components/SubTitle'
 import Text from '@/components/Text'
 
 import bgImgMobile from '@/assets/technology/background-technology-mobile.jpg'
@@ -18,10 +19,10 @@ function Technology() {
     const { name, description, images } = data.technology[Number(id)]
 
     return (
-        <Container backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
+        <BackgroundImage backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
             <SpaceHeader />
 
-            <div>
+            <Container>
                 <SubTitle index='03' subtitle='Space Launch 101' />
 
                 <FlexDiv>
@@ -37,8 +38,8 @@ function Technology() {
                         <Text>{description}</Text>
                     </Box>
                 </FlexDiv>
-            </div>
-        </Container>
+            </Container>
+        </BackgroundImage>
     )
 }
 

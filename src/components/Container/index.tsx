@@ -1,13 +1,8 @@
-import { ContainerWrapper } from './styles'
+import { ContainerWrapper } from "./styles"
 
-interface ContainerProps {
-    children: React.ReactNode;
-    backgroundUrl: Array<string>;
-}
-
-function Container({ children, backgroundUrl }: ContainerProps) {
+function Container({ children }: { children: React.ReactNode }) {
     return (
-        <ContainerWrapper backgroundUrl={backgroundUrl}>
+        <ContainerWrapper>
             {children}
         </ContainerWrapper>
     )

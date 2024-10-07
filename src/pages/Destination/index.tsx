@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
 
-import Container from '@/components/Container'
+import BackgroundImage from '@/components/BackgroundImage'
 import SpaceHeader from '@/components/SpaceHeader'
-import SubTitle from '@/components/SubTitle/styles'
+import Container from '@/components/Container'
+import SubTitle from '@/components/SubTitle'
 import Text from '@/components/Text'
 
 import bgImgMobile from '@/assets/destination/background-destination-mobile.jpg'
@@ -18,10 +19,10 @@ function Destination() {
     const { name, description, distance, travel, images } = data.destination[Number(id)]
 
     return (
-        <Container backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
+        <BackgroundImage backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
             <SpaceHeader />
 
-            <div>
+            <Container>
                 <SubTitle index='01' subtitle='Pick your destination' />
 
                 <Box>
@@ -41,8 +42,8 @@ function Destination() {
                         <Text>{travel}</Text>
                     </DescriptionBox>
                 </Box>
-            </div>
-        </Container >
+            </Container>
+        </BackgroundImage >
     )
 }
 

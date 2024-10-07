@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
 
 import SpaceHeader from '@/components/SpaceHeader'
+import BackgroundImage from '@/components/BackgroundImage'
 import Container from '@/components/Container'
-import SubTitle from '@/components/SubTitle/styles'
+import SubTitle from '@/components/SubTitle'
 import Text from '@/components/Text'
 
 import bgImgMobile from '@/assets/crew/background-crew-mobile.jpg'
@@ -18,26 +19,28 @@ function Crew() {
     const idNumber = Number(id)
 
     return (
-        <Container backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
+        <BackgroundImage backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
             <SpaceHeader />
 
-            <FlexDiv>
-                <Box>
-                    <SubTitle index='02' subtitle='Meet your crew' />
+            <Container>
+                <FlexDiv>
+                    <Box>
+                        <SubTitle index='02' subtitle='Meet your crew' />
 
-                    <div>
-                        <Text size='big' tag='h1' transform='uppercase'>{data.crew[idNumber].role}</Text>
-                        <Text size='big-plus' transform='uppercase'>{data.crew[idNumber].name}</Text>
-                    </div>
+                        <div>
+                            <Text size='big' tag='h1' transform='uppercase'>{data.crew[idNumber].role}</Text>
+                            <Text size='big-plus' transform='uppercase'>{data.crew[idNumber].name}</Text>
+                        </div>
 
-                    <Text>{data.crew[idNumber].bio}</Text>
-                </Box>
+                        <Text>{data.crew[idNumber].bio}</Text>
+                    </Box>
 
-                <ImgWrapper>
-                    <img src={data.crew[idNumber].images.webp} alt="" />
-                </ImgWrapper>
-            </FlexDiv>
-        </Container>
+                    <ImgWrapper>
+                        <img src={data.crew[idNumber].images.webp} alt="" />
+                    </ImgWrapper>
+                </FlexDiv>
+            </Container>
+        </BackgroundImage>
     )
 }
 

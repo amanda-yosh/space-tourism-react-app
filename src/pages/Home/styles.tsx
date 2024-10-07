@@ -11,10 +11,11 @@ export const FlexDiv = styled.div`
     margin-top: 24px;
 
     @media (min-width: ${tablet}) {
-        margin-top: 124px;
+        margin-top: 88px;
     }
 
     @media (min-width: ${desktop}) {
+        margin-top: 124px;
         flex-direction: row;
         justify-content: space-between;
     }
