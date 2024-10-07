@@ -49,10 +49,29 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [x] favicon and title;
 - [x] fix imports to use '@' as src root folder;
 - [] improve Text component;
-- [] use router object;
+- [x] use router object;
 - [x] lint improvements;
 - [x] add internal links;
 - [] add nav to tech page;
 - [] add nav to crew page;
 - [x] add nav to destination page;
 - [] add tests;
+
+### Nice things done
+
+[Replacement](https://www.dhiwise.com/post/the-power-of-createbrowserrouter-optimizing-your-react-app) of `Routes component` for the createBrowserRouter.
+
+```tsx
+function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="crew/:id" element={<Crew />} />
+                <Route path="technology/:id" element={<Technology />} />
+                <Route path="destination/:destination" element={<Destination />} />
+            </Routes>
+        </BrowserRouter >
+    )
+}
+```
