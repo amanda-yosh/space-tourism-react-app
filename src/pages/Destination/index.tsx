@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import BackgroundImage from '@/components/BackgroundImage'
 import SpaceHeader from '@/components/SpaceHeader'
@@ -12,11 +12,14 @@ import bgImgDesktop from '@/assets/destination/background-destination-desktop.jp
 
 import { data } from '@/data'
 
-import { Box, ImgWrapper, DescriptionBox } from './styles'
+import { Box, ImgWrapper, DescriptionBox, DestinationNav } from './styles'
 
 function Destination() {
-    const { id } = useParams()
-    const { name, description, distance, travel, images } = data.destination[Number(id)]
+    const { destination = 'moon' } = useParams()
+
+    const id = data.destination.findIndex((item) => item.name.toLowerCase() === destination.toLowerCase())
+
+    const { name, description, distance, travel, images } = data.destination[id]
 
     return (
         <BackgroundImage backgroundUrl={[bgImgMobile, bgImgTablet, bgImgDesktop]}>
@@ -31,6 +34,23 @@ function Destination() {
                     </ImgWrapper>
 
                     <DescriptionBox>
+                        <DestinationNav>
+                            <ul>
+                                <li>
+                                    <Link to='/destination/moon'>Moon</Link>
+                                </li>
+                                <li>
+                                    <Link to='/destination/mars'>Mars</Link>
+                                </li>
+                                <li>
+                                    <Link to='/destination/europa'>Europa</Link>
+                                </li>
+                                <li>
+                                    <Link to='/destination/titan'>Titan</Link>
+                                </li>
+                            </ul>
+                        </DestinationNav>
+
                         <Text size='big-plus' transform='uppercase'>{name}</Text>
 
                         <Text>{description}</Text>

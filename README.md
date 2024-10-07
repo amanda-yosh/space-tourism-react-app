@@ -54,5 +54,5 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [x] add internal links;
 - [] add nav to tech page;
 - [] add nav to crew page;
-- [] add nav to destination page;
+- [x] add nav to destination page;
 - [] add tests;

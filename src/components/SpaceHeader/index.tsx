@@ -38,7 +38,7 @@ function SpaceHeader() {
                         <Link to='/'><span>00</span> Home</Link>
                     </li>
                     <li>
-                        <Link to='/destination/0'><span>01</span> Destination</Link>
+                        <Link to='/destination/moon'><span>01</span> Destination</Link>
                     </li>
                     <li>
                         <Link to='/crew/0'><span>02</span> Crew</Link>

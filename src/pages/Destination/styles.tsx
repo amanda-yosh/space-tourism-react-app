@@ -22,6 +22,15 @@ export const DescriptionBox = styled.div`
     }
 `
 
+export const DestinationNav = styled.nav`
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+`
+
 export const ImgWrapper = styled.div`
     max-width: 150px;
 
