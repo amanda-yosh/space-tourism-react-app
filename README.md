@@ -45,7 +45,7 @@ The tools were chosen for personal reasons, such as training the use of Styled C
 - [x] create tech page with dinamic layout;
 - [] create hover behaviour on header for desktop devices;
 - [] create state behaviour on header for all devices;
-- [] add the fonts;
+- [x] add the fonts;
 - [x] favicon and title;
 - [x] fix imports to use '@' as src root folder;
 - [] improve Text component;
