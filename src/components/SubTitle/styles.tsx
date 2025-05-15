@@ -1,23 +1,24 @@
-import Text from "@/components/Text";
+import { styled } from "styled-components";
 
-import { SubWrapper } from ".";
+import { breakpoints } from '../../utils/breakpoints'
 
-interface SubTitleProps {
-    index?: string;
-    subtitle: string;
-}
+const { tablet, desktop } = breakpoints
 
-function SubTitle({
-    index,
-    subtitle,
-}: SubTitleProps) {
-    return (
-        <SubWrapper>
-            <Text transform='uppercase'>
-                <span>{index}</span> {subtitle}
-            </Text>
-        </SubWrapper>
-    )
-}
+export const SubWrapper = styled.div`
+    text-align: center;
+    // margin-bottom: 24px;
 
-export default SubTitle
+    span {
+        color: #d0d6f9;
+    }
+
+    @media (min-width: ${tablet}) {
+        width: 100%;
+        text-align: start;
+        // margin-bottom: 64px;
+    }
+
+    @media (min-width: ${desktop}) {
+        // margin-bottom: 88px;
+    }
+`

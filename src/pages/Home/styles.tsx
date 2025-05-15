@@ -8,7 +8,6 @@ export const FlexDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 24px;
 
     @media (min-width: ${tablet}) {
         margin-top: 88px;
@@ -40,6 +39,10 @@ export const ButtonCircle = styled.button`
     color: #000;
     margin-top: 120px;
     text-transform: uppercase;
+
+    :hover {
+    
+    }
 
     @media (min-width: ${tablet}) {
         width: 272px;

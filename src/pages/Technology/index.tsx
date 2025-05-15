@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import BackgroundImage from '@/components/BackgroundImage'
 import Container from '@/components/Container'
@@ -29,6 +29,20 @@ function Technology() {
                     <ImgWrapper>
                         <img src={images.landscape} alt="" />
                     </ImgWrapper>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to='/technology/0'>1</Link>
+                            </li>
+                            <li>
+                                <Link to='/technology/1'>2</Link>
+                            </li>
+                            <li>
+                                <Link to='/technology/2'>3</Link>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <Box>
                         <Text transform='uppercase'>The terminology...</Text>
